@@ -1,3 +1,7 @@
+# COVID-19 Tracker
+
+## An app to track the cases of the novel coronavirus. Built with ReactJS.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
