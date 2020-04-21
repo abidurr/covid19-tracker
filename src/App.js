@@ -27,6 +27,7 @@ class App extends React.Component {
         return (
             // To make sure the styles don't clash
             <div className={styles.container}>
+            <h1>COVID-19 Case Tracker</h1>
                 <Cards data={data}/>
                 <CountryPicker handleCountryChange={this.handleCountryChange}/>
                 <Chart data={data} country={country}/>
