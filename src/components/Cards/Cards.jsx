@@ -24,21 +24,21 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           className={cx(styles.card, styles.infected)}
         >
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="textPrimary" gutterBottom>
               INFECTED
             </Typography>
             <Typography variant="h5">
               <CountUp
                 start={0}
                 end={confirmed.value}
-                duration={2.5}
+                duration={2}
                 separator=","
               />
             </Typography>
             <Typography color="textSecondary">
               {new Date(lastUpdate).toDateString()}
             </Typography>
-            <Typography variant="body2">ACTIVE CASES</Typography>
+            <Typography variant="body2"></Typography>
           </CardContent>
         </Grid>
         <Grid
@@ -49,21 +49,21 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           className={cx(styles.card, styles.recovered)}
         >
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="textPrimary" gutterBottom>
               RECOVERED
             </Typography>
             <Typography variant="h5">
               <CountUp
                 start={0}
                 end={recovered.value}
-                duration={2.5}
+                duration={2}
                 separator=","
               />
             </Typography>
             <Typography color="textSecondary">
               {new Date(lastUpdate).toDateString()}
             </Typography>
-            <Typography variant="body2">NO OF RECOVERIES</Typography>
+            <Typography variant="body2"></Typography>
           </CardContent>
         </Grid>
         <Grid
@@ -74,21 +74,21 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           className={cx(styles.card, styles.deaths)}
         >
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="textPrimary" gutterBottom>
               DEATHS
             </Typography>
             <Typography variant="h5">
               <CountUp
                 start={0}
                 end={deaths.value}
-                duration={2.5}
+                duration={2}
                 separator=","
               />
             </Typography>
             <Typography color="textSecondary">
               {new Date(lastUpdate).toDateString()}
             </Typography>
-            <Typography variant="body2">ACTIVE CASES</Typography>
+            <Typography variant="body2"></Typography>
           </CardContent>
         </Grid>
       </Grid>
